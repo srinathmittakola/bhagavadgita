@@ -113,7 +113,7 @@ const filtered = chapters.filter(c =>
         )}
 
         {!loading && !error && (
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(390px, 1.5fr))", gap: "16px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 400px), 1fr))", gap: "16px" }}>
             {filtered.length === 0 ? (
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} style={{ textAlign: "center", padding: "40px 0" }}>
                 <p style={{ color: "var(--charcoal-soft)", fontSize: "1.05rem", fontStyle: "italic" }}>

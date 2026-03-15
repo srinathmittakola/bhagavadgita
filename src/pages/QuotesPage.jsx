@@ -19,7 +19,7 @@ export default function QuotesPage() {
           Timeless wisdom from the Bhagavad Gita
         </p>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(390px, 1fr))", gap: 30 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 400px), 1fr))", gap: "16px" }}>
           {quotes.map((quote, idx) => (
             <motion.div
               key={idx}

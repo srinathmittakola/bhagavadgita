@@ -24,10 +24,21 @@ export default function App() {
   };
 
   return (
-    <div style={{ display: "flex", flexDirection: "column" }}>
+    <div style={{
+      minHeight: "100vh",
+      display: "flex",
+      flexDirection: "column",
+      margin: 0,
+      padding: 0
+    }}>
       <Header onHome={handleHome} />
 
-      <main style={{ flex: 1, position: "relative" }}>
+      <main style={{
+        flex: 1,
+        position: "relative",
+        margin: 0,
+        padding: 0
+      }}>
         <AnimatePresence mode="wait">
           {currentPage === 'privacy' && (
             <motion.div key="privacy" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.4 }}>

@@ -19,7 +19,7 @@ export default function NewsletterSection() {
   return (
     <section
       style={{
-        padding: "80px 24px",
+        padding: "50px 24px",
         background: "var(--color-deep-maroon)"
       }}
     >

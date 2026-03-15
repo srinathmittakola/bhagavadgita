@@ -2,7 +2,7 @@ export default function AboutSection() {
     return (
         <section
             style={{
-                padding: "100px 24px",
+                padding: "auto 24px",
                 background:
                     "linear-gradient(180deg, var(--color-warm-cream) 0%, #F5EDE0 100%)"
             }}
@@ -12,7 +12,7 @@ export default function AboutSection() {
                 <div
                     style={{
                         display: "grid",
-                        gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))",
+                        gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 400px), 1fr))",
                         gap: 60,
                         alignItems: "center"
                     }}
@@ -95,8 +95,8 @@ export default function AboutSection() {
                             }}
                         >
                             <svg viewBox="0 0 200 200" style={{ width: "90%", opacity: 0.2 }}>
-                                
-                                <circle cx="100" cy="100" r="80" fill="none" stroke="#D4AF37" strokeWidth="1"  />
+
+                                <circle cx="100" cy="100" r="80" fill="none" stroke="#D4AF37" strokeWidth="1" />
                                 <circle cx="100" cy="100" r="60" fill="none" stroke="#D4AF37" strokeWidth="1" />
                                 <circle cx="100" cy="100" r="40" fill="none" stroke="#D4AF37" strokeWidth="1" />
                             </svg>
